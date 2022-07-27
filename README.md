@@ -2,7 +2,4 @@
 
 This will be a generic repository holding scripts and tools that don't belong to a any specific larger project.  
 The code provided in this repo is based on various tasks and smaller projects encountered during my professional assignments.
-
-I will try to make the code as modular as possible so it can easily be re-used.
-
-The code will focus on various tasks related to network, cloud and cybersecurity.
+As usual there is a focus on tasks oriented towards networking, cloud and cybersecurity.
