@@ -1,0 +1,57 @@
+[
+  {
+    "network_name": "users_1stfloor",
+    "subnet": "10.30.0.0/24",
+    "site": "Frankfurt"
+  },
+  {
+    "network_name": "wireless_2ndfloor",
+    "subnet": "10.30.1.0/24",
+    "site": "Leipzig"
+  },
+  {
+    "network_name": "WLAN_Scanners",
+    "subnet": "10.20.50.0/23",
+    "site": "Berlin"
+  },
+  {
+    "network_name": "packaging",
+    "subnet": "10.40.60.0/24",
+    "site": "Koln"
+  },
+  {
+    "network_name": "printers",
+    "subnet": "10.40.40.0/24",
+    "site": "Koln"
+  },
+  {
+    "network_name": "office",
+    "subnet": "10.40.20.0/24",
+    "site": "Koln"
+  },
+  {
+    "network_name": "voice and video",
+    "subnet": "10.40.21.0/24",
+    "site": "Koln"
+  },
+  {
+    "network_name": "Camera network",
+    "subnet": "10.40.35.0/24",
+    "site": "Koln"
+  },
+  {
+    "network_name": "alarm",
+    "subnet": "10.40.23.0/24",
+    "site": "Koln"
+  },
+  {
+    "network_name": "sensors",
+    "subnet": "10.40.22.0/24",
+    "site": "Koln"
+  },
+  {
+    "network_name": "mypublicdmz",
+    "subnet": "10.40.48.0/24",
+    "site": "Koln"
+  }
+]
