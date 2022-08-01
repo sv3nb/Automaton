@@ -3,7 +3,7 @@ import re
 import os
 from pathlib import Path
 
-os.chdir(r"C:\Users\CMYD3348\Automation\DSM")
+os.chdir(r"C:\Users\Myscriptslocation")
 wb = openpyxl.load_workbook('demo_wb.xlsx')
 inventory = wb['Inventory']
 fw = wb['FW']
