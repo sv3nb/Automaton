@@ -28,7 +28,7 @@ def asa_parse_syslog():
 
     regex = re.compile(r"(?P<datetime>\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}).+(?P<eventid>ASA-5-106100).+\/(?P<source>\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}).(?P<srcport>\d{1,5}).+\/(?P<dst>\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}).(?P<dstport>\d{1,5}).+(?P<uid>(%s)).+"%acl)
 
-    with open('cisco_syslog.log', 'r') as logfile:
+    with open('asa_syslog_sample.log', 'r') as logfile:
         fwrules= []
         for logentry in logfile.readlines():
             match = regex.match(logentry)  
