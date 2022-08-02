@@ -6,11 +6,11 @@ Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232851916 f
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232851926 for Zone_Operations:10.173.240.5/57078 to Zone_Transit:10.157.66.204/123 duration 0:02:01 bytes 48
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854197 for Zone_Office:10.23.142.230/32469 (10.23.142.230/32469) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854198 for Zone_Office:10.23.142.226/13513 (10.23.142.226/13513) to Zone_Transit:10.157.65.204/53 (10.157.65.204/53)
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302014: Teardown TCP connection 232854191 for Zone_Office:10.23.142.207/20639 to Zone_Transit:20.60.27.164/443 duration 0:00:01 bytes 44457 TCP FINs from Zone_Office
+Jul 20 00:00:00 10.99.5.105 : %ASA-6-302014: Teardown TCP connection 232854191 for Zone_Office:10.23.142.207/20639 to Zone_Transit:10.60.27.164/443 duration 0:00:01 bytes 44457 TCP FINs from Zone_Office
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854197 for Zone_Office:10.23.142.230/32469 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 256
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854198 for Zone_Office:10.23.142.226/13513 to Zone_Transit:10.157.65.204/53 duration 0:00:00 bytes 186
-Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted tcp Zone_Office/10.23.142.226(17079) -> Zone_Transit/20.60.27.164(443) hit-cnt 1 first hit [0x98e54a82, 0x00000000]
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302013: Built inbound TCP connection 232854199 for Zone_Office:10.23.142.226/17079 (10.23.142.226/17079) to Zone_Transit:20.60.27.164/443 (20.60.27.164/443)
+Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted tcp Zone_Office/10.23.142.226(17079) -> Zone_Transit/10.60.27.164(443) hit-cnt 1 first hit [0x98e54a82, 0x00000000]
+Jul 20 00:00:00 10.99.5.105 : %ASA-6-302013: Built inbound TCP connection 232854199 for Zone_Office:10.23.142.226/17079 (10.23.142.226/17079) to Zone_Transit:10.60.27.164/443 (10.60.27.164/443)
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302014: Teardown TCP connection 232854193 for Zone_wireless:10.169.3.11/52102 to Zone_Transit:10.157.67.194/8081 duration 0:00:01 bytes 2219 TCP FINs from Zone_Transit
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-106015: Deny TCP (no connection) from 10.169.3.11/52102 to 10.157.67.194/8081 flags FIN ACK  on interface Zone_wireless
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854200 for Zone_Office:10.23.142.204/26593 (10.23.142.204/26593) to Zone_Transit:10.157.65.204/53 (10.157.65.204/53)
@@ -26,13 +26,13 @@ Jul 20 00:00:00 10.99.5.105 : %ASA-6-302014: Teardown TCP connection 232854203 f
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854204 for Zone_Office:10.23.142.230/32469 (10.23.142.230/32469) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
 Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.226(7747) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854205 for Zone_Office:10.23.142.226/7747 (10.23.142.226/7747) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302014: Teardown TCP connection 232854199 for Zone_Office:10.23.142.226/17079 to Zone_Transit:20.60.27.164/443 duration 0:00:00 bytes 11395 TCP FINs from Zone_Office
+Jul 20 00:00:00 10.99.5.105 : %ASA-6-302014: Teardown TCP connection 232854199 for Zone_Office:10.23.142.226/17079 to Zone_Transit:10.60.27.164/443 duration 0:00:00 bytes 11395 TCP FINs from Zone_Office
 Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.202(38704) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854206 for Zone_Office:10.23.142.202/38704 (10.23.142.202/38704) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854204 for Zone_Office:10.23.142.230/32469 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 186
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854205 for Zone_Office:10.23.142.226/7747 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 256
-Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted tcp Zone_Office/10.23.142.226(47876) -> Zone_Transit/20.60.27.164(443) hit-cnt 1 first hit [0x98e54a82, 0x00000000]
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302013: Built inbound TCP connection 232854207 for Zone_Office:10.23.142.226/47876 (10.23.142.226/47876) to Zone_Transit:20.60.27.164/443 (20.60.27.164/443)
+Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted tcp Zone_Office/10.23.142.226(47876) -> Zone_Transit/10.60.27.164(443) hit-cnt 1 first hit [0x98e54a82, 0x00000000]
+Jul 20 00:00:00 10.99.5.105 : %ASA-6-302013: Built inbound TCP connection 232854207 for Zone_Office:10.23.142.226/47876 (10.23.142.226/47876) to Zone_Transit:10.60.27.164/443 (10.60.27.164/443)
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854206 for Zone_Office:10.23.142.202/38704 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 199
 Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted tcp Zone_Office/10.23.142.207(35982) -> Zone_Transit/13.69.106.219(443) hit-cnt 1 first hit [0x98e54a82, 0x00000000]
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302013: Built inbound TCP connection 232854208 for Zone_Office:10.23.142.207/35982 (10.23.142.207/35982) to Zone_Transit:13.69.106.219/443 (13.69.106.219/443)
@@ -45,37 +45,3 @@ Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted ud
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854211 for Zone_Office:10.23.142.202/36000 (10.23.142.202/36000) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
 Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854210 for Zone_Office:10.23.142.202/35230 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 267
 Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.202(47987) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854212 for Zone_Office:10.23.142.202/47987 (10.23.142.202/47987) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854211 for Zone_Office:10.23.142.202/36000 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 162
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854212 for Zone_Office:10.23.142.202/47987 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 217
-Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted tcp Zone_Office/10.23.142.202(38628) -> Zone_Transit/52.178.17.240(443) hit-cnt 1 first hit [0x98e54a82, 0x00000000]
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302013: Built inbound TCP connection 232854213 for Zone_Office:10.23.142.202/38628 (10.23.142.202/38628) to Zone_Transit:52.178.17.240/443 (52.178.17.240/443)
-Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.203(52603) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854214 for Zone_Office:10.23.142.203/52603 (10.23.142.203/52603) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
-Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.203(33151) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854215 for Zone_Office:10.23.142.203/33151 (10.23.142.203/33151) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854214 for Zone_Office:10.23.142.203/52603 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 154
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854215 for Zone_Office:10.23.142.203/33151 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 199
-Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.203(44653) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854216 for Zone_Office:10.23.142.203/44653 (10.23.142.203/44653) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854216 for Zone_Office:10.23.142.203/44653 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 199
-Jul 20 00:00:00 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.206(51104) -> Zone_Transit/10.157.65.204(53) hit-cnt 1 first hit [0x51945210, 0x9f1e9067]
-Jul 20 00:00:00 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854217 for Zone_Office:10.23.142.206/51104 (10.23.142.206/51104) to Zone_Transit:10.157.65.204/53 (10.157.65.204/53)
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302020: Built outbound ICMP connection for faddr 10.23.66.68/0 gaddr 10.187.31.52/1028 laddr 10.187.31.52/1028 type 8 code 0 
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302020: Built inbound ICMP connection for faddr 10.23.66.68/0 gaddr 10.187.31.52/1028 laddr 10.187.31.52/1028 type 0 code 0 
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854217 for Zone_Office:10.23.142.206/51104 to Zone_Transit:10.157.65.204/53 duration 0:00:00 bytes 223
-Jul 20 00:00:01 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Operations/10.173.240.14(34244) -> Zone_Transit/10.187.31.58(514) hit-cnt 1 first hit [0x98e54a82, 0x00000000]
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854220 for Zone_Operations:10.173.240.14/34244 (10.173.240.14/34244) to Zone_Transit:10.187.31.58/514 (10.187.31.58/514)
-Jul 20 00:00:01 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted tcp Zone_Office/10.23.142.206(51952) -> Zone_Transit/20.50.80.210(443) hit-cnt 1 first hit [0x98e54a82, 0x00000000]
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302013: Built inbound TCP connection 232854221 for Zone_Office:10.23.142.206/51952 (10.23.142.206/51952) to Zone_Transit:20.50.80.210/443 (20.50.80.210/443)
-Jul 20 00:00:01 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.203(53622) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854222 for Zone_Office:10.23.142.203/53622 (10.23.142.203/53622) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
-Jul 20 00:00:01 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.203(42623) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854223 for Zone_Office:10.23.142.203/42623 (10.23.142.203/42623) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302014: Teardown TCP connection 232851843 for Zone_Office:10.23.142.23/37940 to Zone_Transit:40.126.31.67/443 duration 0:02:05 bytes 9763 TCP Reset-I from Zone_Transit
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854222 for Zone_Office:10.23.142.203/53622 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 212
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302016: Teardown UDP connection 232854223 for Zone_Office:10.23.142.203/42623 to Zone_Transit:10.157.65.203/53 duration 0:00:00 bytes 267
-Jul 20 00:00:01 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.203(42824) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854224 for Zone_Office:10.23.142.203/42824 (10.23.142.203/42824) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
-Jul 20 00:00:01 10.99.5.105 : %ASA-5-106100: access-list Global_acl permitted udp Zone_Office/10.23.142.203(51762) -> Zone_Transit/10.157.65.203(53) hit-cnt 1 first hit [0x51945210, 0x1bd026e9]
-Jul 20 00:00:01 10.99.5.105 : %ASA-6-302015: Built inbound UDP connection 232854225 for Zone_Office:10.23.142.203/51762 (10.23.142.203/51762) to Zone_Transit:10.157.65.203/53 (10.157.65.203/53)
