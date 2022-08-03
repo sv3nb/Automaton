@@ -32,7 +32,7 @@ for i in range(2,inventory.max_row,1):
         inventory[f'a{i}'].value == "Fortigate" and \
         firewall_keywords.findall(str(inventory[f'b{i}'].value)):
             print(f"{inventory[f'b{i}'].value} device ip is: {inventory[f'd{i}'].value}")
-            commands.append(f"command: ssh admin@{str(inventory[f'd{i}'].value)} && zip -r /home/afa/algosec/firewalls/" + f"{str(inventory[f'b{i}'].value)[0:7]}") 
+            commands.append(f"command: ssh admin@{str(inventory[f'd{i}'].value)} && zip -r /home/afa/logs/firewalls/" + f"{str(inventory[f'b{i}'].value)[0:7]}") 
     except TypeError:
         pass
     
