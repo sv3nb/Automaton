@@ -4,6 +4,8 @@
 
 import subprocess
 
+syslogfile = "myfile.log"
+
 bashcommands = [
   "sed -i '/ASA-6-106015/d' cisco_syslog.log", \
   "sed -i '/ASA-6-302013/d' cisco_syslog.log", \
