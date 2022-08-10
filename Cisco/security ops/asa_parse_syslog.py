@@ -1,6 +1,9 @@
-# This script will parse the logs of an ASA firewall and extract 
-# event_id TCP FIN = %ASA-6-302014 indicicates the traffic was allowed
-# event_id TCP RST = "%ASA-6-106015" indicates the traffic was blocked by the firewall
+# This script will parse the logs of an ASA firewall and extract all traffic flows matching a specific uid
+# uid in this case is 0x98e54a82 which matches a specific ACL entry (an IP any any rule in this case)
+# Useful to extract all the traffic flows that hit an any-any rule so we can build granular rules and phase-out the any-any rule
+# event_id  TPP first hit = ASA-5-106100
+# use regex101 to test the regex pattern on a sample string
+
 
 import re
 import csv
@@ -22,11 +25,8 @@ def asa_parse_syslog():
     {'eventid': 'ASA-5-106100', 'source': '10.77.142.204', 'scrport': '55932', 'dst': '8.8.8.8', 'dstport': '443', 'uid': '0x98e54a82'}
     '''
     acl="0x98e54a82"
-    event_id="ASA-6-302014"
-    allow="ASA-5-106100"
-    tcp_reset ="ASA-6-106015"
-
-    regex = re.compile(r"(?P<datetime>\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}).+(?P<eventid>ASA-5-106100).+\/(?P<source>\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}).(?P<srcport>\d{1,5}).+\/(?P<dst>\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}).(?P<dstport>\d{1,5}).+(?P<uid>(%s)).+"%acl)
+ 
+    regex = re.compile(r"(?P<datetime>\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}).+(?P<eventid>ASA-5-106100).+\/(?P<source>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).(?P<srcport>\d{1,5}).+\/(?P<dst>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).(?P<dstport>\d{1,5}).+(?P<uid>(%s)).+"%acl)
 
     with open('asa_syslog_sample.log', 'r') as logfile:
         fwrules= []
