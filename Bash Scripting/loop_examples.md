@@ -45,3 +45,14 @@ do
 	echo $x
 done
 ```
+
+# while read -> read file line per line
+
+```Bash
+cat logfile | while read logentry
+do
+	echo "This is a logentry:${log//_/-}"
+done
+# can also be written as
+cat logfile | while read log; do echo "This is a logentry:${log//_/-}"; done
+```
