@@ -46,13 +46,17 @@ do
 done
 ```
 
-# while read -> read file line per line
+# while read 
 
 ```Bash
+# Read file line per line we can replace certain chars with "/" e.g. /_/- replaces underscores with hyphens.
+# // replace all instances for each line read
+
 cat logfile | while read logentry
 do
 	echo "This is a logentry:${log//_/-}"
 done
-# can also be written as
+
+# Can also be written in a oneliner:
 cat logfile | while read log; do echo "This is a logentry:${log//_/-}"; done
 ```
