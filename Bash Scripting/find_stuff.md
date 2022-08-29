@@ -12,7 +12,9 @@ find files with size larger than 5GB, suppress 'permission denied' errors, show 
 find $SYSTEMROOT -size +5G 2>/dev/null | head -5 
 ```
 
-For Windows: get net shares, strip all spaces and additional info and store the dirs in a var
+## Windows
+
+###Get net shares, strip all spaces and additional info and store the dirs in a var
 
 ```Bash
 dirs=$(net share | grep 'C:' | cut -d'$' -f2 | sed -e 's/^[[:space:]]*//' | cut -d' ' -f1)
@@ -23,4 +25,17 @@ do
     find $share -mtime -1
     printf "\n"
 done
+```
+
+### Find credential vault path
+
+```Bash
+vaultpath=$(VaultCmd.exe //list | grep -E Location.*Vault$ | cut -d' ' -f2)
+echo $vaultpath
+```
+
+### Check certain eventlog state
+
+```Bash
+uac_state=$(wevtutil gl $(wevtutil el | grep -i uac/operational))
 ```
