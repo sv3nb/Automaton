@@ -1,3 +1,7 @@
+# Find stuff
+
+## Linux
+
 show attributes for each file found, filter on files starting with A (archive attrib) and .log in the string
 finally only show the file path by slicing on char position, sed will trim any leading whitespace to clean up output.
 (depending on attrib version the number of spaces can change)
