@@ -1,7 +1,7 @@
 
 # coding: utf-8
 #Description: Retrieve Mitigations from specific technique using Web Scraping
-#Author: Sven Bracke <sven@skrypter.be>  
+#Author: Sven Bracke  
 #Date: 2022-09-06 
 #Version: 1.1
 
