@@ -34,14 +34,12 @@ mitigation_list = []
 if number == 0:
     print("This type of attack technique cannot be easily mitigated")
 elif number <= 1:
-    mitigation_list.append(dom.xpath(f'//*[@id="v-attckmatrix"]/div[2]/div/div/div/table[2]/tbody/tr[{1}]/td[3]/p/text()'))
+    mitigation_list.append(dom.xpath(f'//*[@id="v-attckmatrix"]/div[2]/div/div/div/table[2]/tbody/tr[{1}]/td[3]/p/text()')[0])
 else:
     for i in range(1,number + 1): # added + 1 or else he misses the last mitigation.
         try:
-            mitigation_list.append(dom.xpath(f'//*[@id="v-attckmatrix"]/div[2]/div/div/div/table[2]/tbody/tr[{i}]/td[3]/p/text()'))
+            mitigation_list.append(dom.xpath(f'//*[@id="v-attckmatrix"]/div[2]/div/div/div/table[2]/tbody/tr[{i}]/td[3]/p/text()')[0])
         except IndexError:
             continue
 
-[print(mitigation[0]) for mitigation in mitigation_list]
-
-
+[print(f"action to take: {mitigation} \n") for mitigation in mitigation_list]
