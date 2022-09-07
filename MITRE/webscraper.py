@@ -1,4 +1,10 @@
-# inspect element with chrome to find out the class so you can select specific elements from the HTML page
+
+# coding: utf-8
+#Description: Retrieve Mitigations from specific technique using Web Scraping
+#Author: Sven Bracke <sven@skrypter.be>  
+#Date: 2022-09-06 
+#Version: 1.1
+
 import requests, bs4
 from lxml import etree
     
@@ -15,10 +21,9 @@ desc = technique.select('div.description-body')
 mylist = [(p.get_text(strip=True)) for p in desc]
 mylist[0]
 
-# Use XPATH to extract deep nested data
 # The second table of this class contains the <p> elements that describe the mitigations
+# find out how many <p> elements there are, each <p> is a mitigation
 
-dom = etree.HTML(str(technique))
 root = technique.findAll('table', {'class': 'table table-bordered table-alternate mt-2'})
 try:
     children = root[1].findChildren('p', recursive=True)
@@ -27,10 +32,11 @@ except IndexError:
 else:
     number = len(children)
 
+# Note: for certain (sub)techniques there is no mitigation
+# Use XPATH to extract deep nested data
+
 mitigation_list = []
-
-# for certain (sub)techniques there is no mitigation
-
+dom = etree.HTML(str(technique))
 if number == 0:
     print("This type of attack technique cannot be easily mitigated")
 elif number <= 1:
@@ -43,3 +49,5 @@ else:
             continue
 
 [print(f"action to take: {mitigation} \n") for mitigation in mitigation_list]
+
+
