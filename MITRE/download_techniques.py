@@ -13,7 +13,7 @@ Layer = "enterprise" # enterprise, mobile or ics
 
 ### END USER INPUT ###
 
-Url = f"https://attack.mitre.org/groups/{Threat_Group}/{Threat_Group}-enterprise-layer.json"
+Url = f"https://attack.mitre.org/groups/{Threat_Group}/{Threat_Group}-{Layer}-layer.json"
 
 resp = requests.get(Url)
 matrix = json.loads(resp.text)
