@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# import a matrix filtered on Wizard_Spider 
+# import a matrix filtered on Wizard_Spider group
 # The schema contains metadata about the columns
 
 import pandas as pd
