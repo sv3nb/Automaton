@@ -9,8 +9,6 @@
 # construct a dataframe bases on ATT&CK matrix filtered on Threat Group. 
 # Data can be used for building risk profiles in Algosec and copy pasted into Security Assessment reports
 
-from base64 import encode
-from typing import Collection
 import pandas as pd
 import requests, bs4
 from lxml import etree
