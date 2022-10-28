@@ -33,3 +33,12 @@ class TechniqueDatabase(object):
 
     def get_mitigation(self, id):
         return self.find(id).get("mitigation")
+    
+    # instantiate the TechniqueDatabase object
+    DB = TechniqueDatabase(database)
+    
+    # You can pass the technique id's into the class methods to retrieve data from the database
+    id = "T1548"
+    name = DB.get_name(id)
+    traffic = DB.get_traffic(id)
+    protocol = DB.get_proto(id)
