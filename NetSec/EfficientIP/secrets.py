@@ -1,1 +1,0 @@
-secrets = {'authkey':'Basic xxxxx'}

@@ -1,7 +1,0 @@
-# Working with filesystems 
-
-Use the following commands to list the files created on today with the .zip extension:  
-
-ls /tmp  -ltr | grep "`date | awk '{print $2" "$3}'`" | grep .zip
-
-
