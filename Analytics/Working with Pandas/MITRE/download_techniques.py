@@ -1,6 +1,6 @@
 #! /usr/bin/env pythonpyt   
 
-# Download the threat group matrix and save it to a JSON file so we can load it into a jupyter notebook
+# Download the threat group matrix and save it to a JSON file so we can load it into a junyper notebook
 # adds some additional info 
 
 import requests, bs4
